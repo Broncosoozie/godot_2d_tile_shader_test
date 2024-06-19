@@ -1,0 +1,1 @@
+Inspired by [this YT tutorial](https://www.youtube.com/watch?v=ssrJGxMtssE) for making a tiled texture a bit more random, I tried to do this in 2D, but ran into issues. If I can figure it out or someone can help me, I'll update this to show what works.
