@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://8vbgaten31fm"]
+
+[ext_resource type="Shader" uid="uid://boty623bxqc8q" path="res://repetition.tres" id="1_22u2j"]
+[ext_resource type="Texture2D" uid="uid://qahnd43jfrdm" path="res://green_nebula_tile_test.png" id="2_u17h1"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_angt1"]
+shader = ExtResource("1_22u2j")
+
+[sub_resource type="QuadMesh" id="QuadMesh_8ufmh"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_l7w0w"]
+shader = ExtResource("1_22u2j")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+material = SubResource("ShaderMaterial_angt1")
+position = Vector2(228.5, 213.25)
+scale = Vector2(-456, 427.5)
+mesh = SubResource("QuadMesh_8ufmh")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_l7w0w")
+offset_left = 483.0
+offset_top = -25.0
+offset_right = 1664.0
+offset_bottom = 1041.0
+texture = ExtResource("2_u17h1")
+stretch_mode = 1
